@@ -17,7 +17,7 @@ with open("./private_key.pem", "wb") as f:
     ))
 
 
-# Write private key to disk with a password "passphrase"
+# Write public key to disk
 with open("./public_key.pem", "wb") as f:
     f.write(private_key_g.public_key().public_bytes(
         encoding=serialization.Encoding.PEM,
